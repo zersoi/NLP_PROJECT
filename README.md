@@ -1,6 +1,6 @@
 # Sentiment Analyzer using BERT and Flask
 
-This project presents a sentiment analysis system that utilizes a fine-tuned BERT model to classify tweets as either positive or negative. The system is deployed as a web application using the Flask framework.
+This project presents a sentiment analysis system that utilizes a fine-tuned BERT model to classify as either positive or negative. The system is deployed as a web application using the Flask framework.
 
 ## Features
 - Leverages transfer learning through the use of a pre-trained BERT model (`bert-base-uncased`)
@@ -10,14 +10,14 @@ This project presents a sentiment analysis system that utilizes a fine-tuned BER
 
 ## Getting Started
 
-### 1. Clone the repository
+### 
 
-### 2. Install required dependencies
+### 1. Install required dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Train the Model
+### 2. Train the Model
 Execute the training script (`train.py`) to fine-tune the model and save the output:
 
 ```bash
@@ -25,7 +25,7 @@ python train.py
 ```
 Note: It is recommended to use Google Colab for training, due to the availability of GPU resources.
 
-### 4. Launch the Web Application
+### 3. Launch the Web Application
 ```bash
 python app.py
 ```
@@ -45,10 +45,4 @@ Then open your browser and navigate to: `http://127.0.0.1:5000`
 - Base Model: BERT (`bert-base-uncased`)
 - Task: Binary sentiment classification
 - Dataset: Sentiment140 (Twitter-based dataset)
-- Output Labels: 0 = Negative, 1 = Positive
 
-## Techniques Applied
-
-- Transfer learning from pre-trained transformers
-- Fine-tuning on domain-specific data (tweets)
-- Deployment using Flask web framework
